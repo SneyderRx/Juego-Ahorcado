@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" type="module" defer></script>
+    <script src="./components/letters/letters.js" type="module" defer></script>
+</head>
+<body>
+    <h1>Juego del ahorcado</h1>
+    <p>Palabra</p>
+    <div id="palabraOculta"></div>
+    <p>Intentos restantes: <span id="intentos"></span></p>
+
+    <div id="ahorcado">
+        <div class="parte" id="cabeza" style="display: none;"></div>
+        <div class="parte" id="torso" style="display: none;"></div>
+        <div class="parte" id="brazo-izquierdo" style="display: none;"></div>
+        <div class="parte" id="brazo-derecho" style="display: none;"></div>
+        <div class="parte" id="pierna-izquierda" style="display: none;"></div>
+        <div class="parte" id="pierna-derecha" style="display: none;"></div>
+    </div>
+    <br>
+    <div id="letras"></div>
+    <br>
+</body>
+</html>

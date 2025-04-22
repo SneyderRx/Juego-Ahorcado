@@ -1,0 +1,58 @@
+#ahorcado {
+    position: relative; /* Para posicionar las partes relativas a este contenedor */
+    width: 150px; 
+    height: 200px;
+    border-bottom: 2px solid black; /* Base del ahorcado */
+}
+
+.parte {
+    background-color: black; /* Color del muñeco */
+    position: absolute;
+    width: 2px; /* Grosor común para torso y extremidades */
+}
+
+#cabeza {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    top: 10px;
+    left: 35px;
+}
+
+#torso {
+    height: 50px;
+    top: 40px;
+    left: 49px;
+}
+
+#brazo-izquierdo {
+    height: 30px;
+    top: 45px; /* Ajustar para que empiece en el torso */
+    left: 20px;
+    transform: rotate(-30deg);
+    transform-origin: top center; /* Mantenemos el origen arriba */
+}
+
+#brazo-derecho {
+    height: 30px;
+    top: 45px;
+    left: 78px;
+    transform: rotate(30deg);
+    transform-origin: top center;
+}
+
+#pierna-izquierda {
+    height: 40px;
+    top: 90px; /* Ajustar para que empiece al final del torso */
+    left: 35px;
+    transform: rotate(20deg);
+    transform-origin: top center; /* Mantenemos el origen arriba */
+}
+
+#pierna-derecha {
+    height: 40px;
+    top: 90px;
+    left: 63px;
+    transform: rotate(-20deg);
+    transform-origin: top center;
+}
